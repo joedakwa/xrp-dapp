@@ -3,7 +3,7 @@ import './App.css';
 import Main from './pages/main';
 import Web3Modal from "web3modal";
 import web3 from "web3";
-import {ethers} from "ethers";
+//import {ethers} from "ethers";
 import CoinbaseWalletSDK from '@coinbase/wallet-sdk';
 
 
@@ -15,8 +15,16 @@ const providerOptions = {
     infuraId: {3: "https://mainnet.infura.io/v3/f345fc4e21ea40b7bc644b1627b37ff3"}
     }
 
-  }
-}
+  },
+           // Add MetaMask option
+           metamask: {
+            package: web3,
+            options: {
+              appName: 'My dApp'
+            }
+          }
+        };
+
 
 
 function App() {

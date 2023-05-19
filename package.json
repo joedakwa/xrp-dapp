@@ -27,10 +27,12 @@
   },
   "dependencies": {
     "@coinbase/wallet-sdk": "^3.6.6",
+    "@walletconnect/web3-provider": "^1.8.0",
     "dotenv": "^16.0.3",
     "ethers": "^6.3.0",
     "web3": "^1.10.0",
     "web3modal": "^1.9.12",
-    "xrpl": "^2.7.0-beta.2"
+    "xrpl": "^2.7.0-beta.2",
+    "xumm-sdk": "^1.8.4"
   }
 }
